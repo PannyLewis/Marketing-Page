@@ -1,0 +1,139 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OER Bookr</title>
+<!-- book icon <i class="fas fa-book-open"></i> 
+    sign in icon <i class="fas fa-sign-in-alt"></i>
+    home icon <i class="fas fa-sign-in-alt"></i>
+-->
+</head>
+
+<body>
+
+
+
+<!-- navigation begins code here -->
+<div class="container home">
+
+        <div class="title-nav-parent"> <!--this parent has 2 children:  the page title and the navigation-->
+        
+            <div class="child page-title">
+                <img src="img/oer_classroom.png" alt="OER logo"/>
+                <h1>OER Bookr</h1>
+            </div>
+            
+            <div class="child nav">
+                <a href="index.html">Home</a>
+                <a href="#Joseph Garcia">Joseph Garcia</a>
+                <a href="#Da'Juan McDonald">Da'Juan McDonald</a>
+                <a href="#Panny Lewis">Panny Lewis</a>
+                <a href="#Ariunbold Oyungerel">Ariunbold Oyungerel</a>
+                <a href="#Joshua Humphrey">Joshua Humphrey</a>
+            </div>
+        </div>
+</div>
+<!-- navigation ends here-->
+
+
+
+<!-- header begins here -->
+<header class="intro">
+        <!-- image code here --> 
+        <img src="img/team.jpg" alt="header background"/>
+ 
+       <h2></h2>     
+       <p</p>
+</header>
+<!-- header ends here -->
+
+
+
+<!-- content begins here -->
+<section class="content-person">
+
+        <div class="person">
+          <img src="img/joseph.jpg" alt="Joseph photo"/>
+          <h4 href="https://github.com/kingmoc" id="Joseph Garcia">Joseph Garcia</h4>
+          <p>My Favorite Things</p>
+          <div class="btn">View my Github</div>
+        </div>
+
+        <div class="person">
+          <img src="img/Da'Juan.jpg" alt="Da'Juan photo"/>
+          <h4 href="https://github.com/FIOpwK" id="Da'Juan McDonald">Da'Juan McDonald</h4>
+          <p>My Favorite Things</p>
+          <div class="btn">View my Github</div>
+        </div>
+
+        <div class="person">
+          <img src="img/Panny.jpg" alt="Panny photo"/>
+          <h4 id="Panny Lewis">Panny Lewis</h4>
+          <p>My Favorite Things</p>
+          <div href="https://github.com/PannyLewis" class="btn">View my Github</div>
+        </div>
+
+        <div class="person">
+          <img src="" alt=""/>
+          <h4 id="Ariunbold Oyungerel">Ariunbold Oyungerel</h4>
+          <p>My Favorite Things</p>
+          <div class="btn">View my Github</div>
+        </div>
+
+        <div class="person">
+            <img src="" alt=""/>
+            <h4 id="Joshua Humphrey">Joshua Humphrey</h4>
+            <p>My Favorite Things</p>
+            <div class="btn">View my Github</div>
+        </div> 
+
+</section>
+<!-- content ends here -->
+
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
