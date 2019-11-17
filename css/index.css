@@ -1,6 +1,9 @@
 body {
   background-color: red;
 }
+body div {
+  border: 1px solid;
+}
 .container-home {
-  background-color: red;
+  background-color: #455322;
 }
