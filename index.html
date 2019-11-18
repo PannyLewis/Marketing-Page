@@ -36,14 +36,14 @@
   <!--title and logo end-->
 
   <!-- navigation start -->
-  <div class="nav-container">
+  <nav>
                 
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="#">Contact</a>
+                <a href="#Contact">Contact</a>
                 <a href="#">Login</a>
               
-    </div>   
+  </nav>   
   <!-- navigation end-->
 
 
@@ -66,36 +66,59 @@
 
     <div class="home-article"> <!--parent to 3 articles-->
 
-        <div class="article"> 
+        <div class="art"> 
           <h4>Teacher's Resouces</h4>
           <p>We offer all kinds of resouces for educators:  peer reviewed textbooks, licensed textbooks, lesson plans, classroom management, etc.  Register for your own account and you will receive newsletters, promotions, and access to webinars.</p>
           <div class="btn">Learn More</div>
         </div>
 
-        <div class="article">
+        <div class="art">
           
           <h4>Peer Reviews</h4>
           <p>We have product reviews from other educators, as well as authors, researchers, and students.  Register for your own account and you will be able to make reviews on books and post your comments to other reviews.</p>
           <div class="btn">Learn More</div>
         </div>
  
-        <div class="article">
+        <div class="art">
           
           <h4>Licensed Textooks</h4>
           <p>Search or browse our large catalog of licensed textbooks.  You can search by subject or discipline, author, and you can also filter by reviews.</p>
           <div class="btn">Learn More</div>
-        </div>
+      </div>
   </section>
   <!-- content ends here -->
-
+  
 
 <!-- contact us start -->
-<section>
-  <form action=""></form>
+<section id="Contact">
 
+    <div class="home-contact">
+        <h3>Contact Us</h3>
 
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+    </div>
 </section>
-
 
 <!-- contact us end -->
 
@@ -104,7 +127,9 @@
   <!-- copyright footer begins here -->
     <section>
             <footer>
+              <div class="home-footer">
                 <p>OER Booker 2019</p>
+              </div>
             </footer>
         
     </section>    

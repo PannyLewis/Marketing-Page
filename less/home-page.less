@@ -1,6 +1,106 @@
-.container {
+.home-content {
+        display: flex;
+        flex-direction: column;
+        
+        
 
-        // background-color: @bg-style;
+
+        .home-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: @section-bg;
+                
+                img {
+                        width: 30%;
+                        height: 300px;
+                        // padding: 10px;
+                }
+        }
+
+        .home-article {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: @section-bg;
+                
+                
+
+                .art {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: @content-bg;
+                        
+                }
+
+                h4 {
+                        font-size: 2em;
+                        padding: 1em;
+                        margin: 2%;
+                        text-align: center;
+                        font-style: @sub-heading;
+                        border: 1px solid rgb(222, 222, 235);
+                        background-color: rgb(40, 150, 40);
+                }
+
+                p {
+                        font-style: @font-main;
+                        font-size: large;
+                        height: 50%;
+                        padding: 0 5% 0 5%;
+                }
+                
+                .btn {                        
+                        .custom-btn (black, rgb(40, 150, 40))
+                       
+                    }
+        }
+
+}
 
 
-}   
+        
+.home-contact {
+        background-color: @section-bg;
+        margin: 0;
+        padding: 2%;
+
+        input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+              }
+              
+              input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+              
+              .container {
+                border-radius: 5px;
+                background-color: @content-bg;
+                padding: 20px;
+              }
+}
+
+.home-footer {
+        text-align: center;
+        padding: 2%;
+        background-color: @section-bg;
+
+}

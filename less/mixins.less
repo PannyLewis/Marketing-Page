@@ -1,0 +1,24 @@
+.custom-btn(@color, @bg-color){
+
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    height: 10%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: @bg-color;
+    color: @color;
+
+    @media @mobile {
+        margin: 0px 0px;
+        width: 100%;
+    }
+
+
+    &:hover {
+    opacity: 0.5;
+    }
+
+}
