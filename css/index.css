@@ -1,3 +1,53 @@
+* {
+  color: black;
+}
+body {
+  background-color: #EFEFEF;
+  margin: 0 10% 0 10% ;
+}
 body div {
   border: 1px solid;
+}
+.logo-title {
+  display: flex;
+}
+.logo-title img {
+  width: 100%;
+  height: 100%;
+}
+.logo-title .logo {
+  width: 20%;
+  margin: 0;
+  padding: 10px;
+}
+.logo-title .title {
+  font-style: 'Playfair Display' sans-serif;
+  width: 80%;
+  background-color: #7EAFBA;
+}
+.logo-title .title h1 {
+  font-size: 5em;
+  margin: 5%;
+  text-align: center;
+}
+.nav-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D8D1AC;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    background: #7EAFBA;
+  }
+}
+.nav-container a {
+  font-size: 2em;
+  text-decoration: none;
+}
+.content-person .person li {
+  list-style: square;
 }

@@ -2,9 +2,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Language set below -->
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/index.css">
+  
+  <!-- responsive meta below -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS requirement below -->
+  <link rel="stylesheet" href="/css/index.css">
+
   <title>OER Bookr</title>
 <!-- book icon <i class="fas fa-book-open"></i> 
     sign in icon <i class="fas fa-sign-in-alt"></i>
@@ -15,67 +21,83 @@
 <body>
 <div class="container">
   
+  <!--title and logo start-->
+  <div class="logo-title"> <!--parent-->
+    <!--child 1-->
+      <div class="logo">
+        <img src="img/oerlogo.jpg" alt="OER logo"/>
+      </div>
 
-  <!-- navigation begins code here -->
-  <div class="container-nav">
+    <!--child 2-->
+      <div class="title">
+        <h1>OER Bookr</h1>
+      </div>
+  </div>
+  <!--title and logo end-->
 
-        <div class="title-nav-parent"> <!--this parent has 2 children:  the page title and the navigation-->
-        
-          <!--this child has a logo and title-->  
-          <div class="child page-title"> 
-              <img src="img/oerlogo.jpg" alt="OER logo"/>
-                <h1>OER Bookr</h1>
-          </div>            
-                   
-            <div class="child nav">
-                <nav>
+  <!-- navigation start -->
+  <div class="nav-container">
+                
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="#">Contact</a>
                 <a href="#">Login</a>
-                </nav>
-            </div>          
-
-        </div>
-  </div>
-  <!-- navigation ends here-->
+              
+    </div>   
+  <!-- navigation end-->
 
 
   <!-- header begins here -->
-  <div class="header-img">
-
-  <header class="intro">        
-        <img src="img/backgroundimage.jpg" alt="header background"/>
-  </header>
+    <!-- <header class="head-img">        
+        <img src="img/header.jpg" alt="header background"/>
+  </header> -->
   <!-- header ends here -->
-  </div>
+
 
 
   <!-- content begins here -->
-  <section class="content-resources">
+  <section class="home-content"> <!--parent to 3 images stacked on top of 3 articles-->
 
-        <div class="Resources">
-          <img src="img/teacherresources.jpg" alt="teachers resources"/>
+    <div class="home-img">  <!--parent to 3 images aligned in a row-->
+        <img src="img/teachresources.jpg" alt="teachers resources"/>
+        <img src="img/peerreview.jpg" alt="peer review"/>
+        <img src="img/license.jpg" alt="license seal"/>
+    </div>
+
+    <div class="home-article"> <!--parent to 3 articles-->
+
+        <div class="article"> 
           <h4>Teacher's Resouces</h4>
           <p>We offer all kinds of resouces for educators:  peer reviewed textbooks, licensed textbooks, lesson plans, classroom management, etc.  Register for your own account and you will receive newsletters, promotions, and access to webinars.</p>
           <div class="btn">Learn More</div>
         </div>
 
-        <div class="Resources">
-          <img src="img/peerreview.jpg" alt="peer review"/>
+        <div class="article">
+          
           <h4>Peer Reviews</h4>
           <p>We have product reviews from other educators, as well as authors, researchers, and students.  Register for your own account and you will be able to make reviews on books and post your comments to other reviews.</p>
           <div class="btn">Learn More</div>
         </div>
-
-        <div class="destination">
-          <img src="img/licenseseal.jpg" alt="license seal"/>
+ 
+        <div class="article">
+          
           <h4>Licensed Textooks</h4>
           <p>Search or browse our large catalog of licensed textbooks.  You can search by subject or discipline, author, and you can also filter by reviews.</p>
           <div class="btn">Learn More</div>
         </div>
   </section>
   <!-- content ends here -->
+
+
+<!-- contact us start -->
+<section>
+  <form action=""></form>
+
+
+</section>
+
+
+<!-- contact us end -->
 
 
 
