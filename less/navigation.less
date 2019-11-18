@@ -2,6 +2,7 @@
 .logo-title {
 
     display: flex;
+    border-bottom: 1em solid cadetblue;
 
         img {
             width: 100%;
@@ -37,13 +38,11 @@
         justify-content: space-around;
         align-items: center;
         // background-image: url(https://i.ytimg.com/vi/2XX5zDThC3U/maxresdefault.jpg);
-        background-color: @section-bg;
+        background-color: @main-bg;
         
         
         @media @mobile {
-            nav {
-                background: @head-color;
-            }
+            background: @head-color;            
         }
 
         a {
@@ -51,8 +50,10 @@
             text-decoration: none;
         }
 
-        a:hover {
-            // color: gray;
+        a:hover {     
             opacity: .5;
           }
+
     }
+          
+
