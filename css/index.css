@@ -201,10 +201,11 @@ nav a:hover {
   flex-direction: column;
   width: 50%;
   height: 50%;
+  margin: 3em;
 }
 .content-person .person .person-intro h4 {
-  margin: 1em;
-  padding: 1em;
+  margin: 0em 0 1em 0;
+  padding: 2em;
   font-size: 1.5em;
   border-radius: 0.1em;
   text-align: center;
@@ -223,6 +224,7 @@ nav a:hover {
   flex-direction: row;
   width: 100%;
   padding: 0.2em 0em;
+  margin: 0 0 2em 0;
 }
 .content-person .person .about-buttons .btn {
   margin: 2%;
@@ -274,7 +276,7 @@ nav a:hover {
 .content-person .person-img {
   width: 50%;
   height: 50%;
-  margin: 5em;
+  margin: 10em;
 }
 .content-person .person-img img {
   border: 5px solid;
