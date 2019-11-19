@@ -21,7 +21,9 @@
       <div class="logo-title"> <!--parent-->
         <!--child 1-->
           <div class="logo">
+            <a href="index.html">
             <img src="img/oerlogo.jpg" alt="OER logo"/>
+          </a>
           </div>
     
         <!--child 2-->
@@ -34,12 +36,13 @@
       <!-- navigation start -->
       <nav>
                     
-              <a href="index.html">Home</a>         
+              <!-- <a href="index.html">Home</a>          -->
               <a href="#Joseph Garcia">Joseph</a>
               <a href="#Da'Juan McDonald">Da'Juan</a>
               <a href="#Panny Lewis">Panny</a>
               <a href="#Ariunbold Oyungerel">Ariunbold</a>
               <a href="#Joshua Humphrey">Joshua</a>
+              <a href="#Lesley Banadzem">Lesley</a>
        
                   
       </nav>   
@@ -47,37 +50,42 @@
 
 
 <!-- header begins here -->
-<header class="meet-team">
+<header class="about-team">
         
-    <div class="about-art">
-        <article>
+    <div class="meet-team">
+        <!-- <article> -->
             <h2>Meet our team!</h2>
 
-            <div class="team">
+            <!-- <div class="team">
             
                   <div class="lead">
                     <p>Project Lead</p>
                     <div class="UI">
 
                         <div class="ui1">
-                            <p>User Interface</p>
+                            <p>Web UI Developer</p>
                         </div>
 
                         <div class="ui2">
-                            <p>Front End</p>
+                            <p>Back-End Developer</p>
                         </div>
+
+                        <div class="ui2">
+                            <p>Web React</p>
+                        </div> -->
+<!-- 
                                   
                   </div>
 
-                </div>
+                </div> -->
+
+
+<!-- 
+            </div> -->
 
 
 
-            </div>
-
-
-
-        </article>        
+        
     </div>
 
       <div>
@@ -91,24 +99,33 @@
 
 
 <!-- content begins here -->
-<section class="content-person">
 
-        <div class="person">
 
-            <div class="person-intro">          
-                <h4 href="https://github.com/kingmoc" id="Joseph Garcia">Joseph Garcia</h4>
+<section class="content-person"><!-- parent to 5 children name person -->
+
+        <div class="person"><!-- parent to 2 children named person-intro and person-img -->
+
+            <div class="person-intro"> <!-- this parent has 5 children:  h4, p, ul, btn, top -->         
+                <h4 id="Joseph Garcia" style="background-color: rgb(209, 49, 38)">Joseph Garcia</h4>
                 
-                <p>My Favorite Things</p>
+                <p>My Favorite Things:</p>
                 <ul>
                     <li>Movies</li>
                     <li>Pro Football</li>
                     <li>Podcasts</li>
                   </ul>
-                <div class="btn">View my Github</div>
-                <div class="top">Back to the top</div>
+
+                  <div class="about-buttons">   <!-- this parent has 2 children: 2 buttons -->
+                  <div class="btn">
+                      <a href="https://github.com/kingmoc">View my Github</a>
+                    </div>
+                    <div class="top">
+                      <a href="#top">Back to the top</a>
+                    </div>
+                  </div>
             </div>
 
-              <div class="person img">
+              <div class="person-img">
                   <img src="img/joseph.jpg" alt="Joseph photo"/>
               </div>
 
@@ -117,19 +134,26 @@
         <div class="person">
           
             <div class="person-intro">
-                  <h4  id="Da'Juan McDonald">Da'Juan McDonald</h4>
+                  <h4  id="Da'Juan McDonald" style="background-color: rgb(21, 185, 214)">Da'Juan McDonald</h4>
                   
-                  <p>My Favorite Things</p>
+                  <p>My Favorite Things:</p>
                   <ul>
                       <li>Chess</li>
                       <li>Reading</li>
                       <li>Baltimore Ravens</li>
                     </ul>
-                  <div href="https://github.com/FIOpwK" class="btn">View my Github</div>
-                  <div class="top">Back to the top</div>
+
+                    <div class="about-buttons">
+                        <div class="btn">
+                          <a href="https://github.com/FIOpwK">View my Github</a>
+                        </div>
+                        <div class="top">
+                          <a href="#top">Back to the top</a>
+                        </div>
+                    </div>
             </div>
 
-                <div class="person img">
+                <div class="person-img">
                     <img src="img/Da'Juan.jpg" alt="Da'Juan photo"/>
                 </div>
 
@@ -139,20 +163,25 @@
         <div class="person">
          
             <div class="person-intro">
-                  <h4 id="Panny Lewis">Panny Lewis</h4>
-                  <p>My Favorite Things</p>
+                  <h4 id="Panny Lewis" style="background-color: rgb(21, 196, 30)">Panny Lewis</h4>
+                  <p>My Favorite Things:</p>
                   <ul>
                     <li>Movies</li>
                     <li>Music</li>
                     <li>Cooking</li>
                   </ul>
-                  <div class="btn">
-                    <a href="https://github.com/PannyLewis">View my Github</a>            
-                    </div>
-                    <div class="top">Back to the top</div>
+
+                  <div class="about-buttons">
+                        <div class="btn">
+                          <a href="https://github.com/PannyLewis">View my Github</a>
+                        </div>
+                        <div class="top">
+                          <a href="#top">Back to the top</a>
+                        </div>
+                  </div>
             </div>
              
-                <div class="person img">
+                <div class="person-img">
                     <img src="img/Panny.jpg" alt="Panny photo"/>
                 </div>   
         </div>
@@ -160,42 +189,84 @@
         <div class="person">
 
             <div class="person-intro">
-                  <h4 id="Ariunbold Oyungerel">Ariunbold Oyungerel</h4>
-                  <p>My Favorite Things</p>
+                  <h4 id="Ariunbold Oyungerel" style="background-color: rgb(153, 21, 214)">Ariunbold Oyungerel</h4>
+                  <p>My Favorite Things:</p>
                   <ul>
                       <li>Basketball</li>
                       <li>Meditation</li>
                       <li>Reading</li>
                     </ul>
-                  <div href="https://github.com/Ariuka11" class="btn">View my Github</div>
-                  <div class="top">Back to the top</div>
+
+                    <div class="about-buttons">
+                        <div class="btn">
+                          <a href="https://github.com/Ariuka11">View my Github</a>
+                        </div>
+                        <div class="top">
+                          <a href="#top">Back to the top</a>
+                        </div>
+                    </div> 
             </div>
 
-                  <div class="person img">
+                  <div class="person-img">
                   <img src="img/ariunbold.jpg" alt="Ariunbold photo"/>
                   </div> 
-
+            
         </div>
 
         <div class="person">
 
-          <div class="person-intro">  
-                <h4 id="Joshua Humphrey">Joshua Humphrey</h4>
-                <p>My Favorite Things</p>
-                <ul>
-                    <li>Basketball</li>
-                    <li>Meditation</li>
-                    <li>Reading</li>
-                  </ul>
-                <div class="btn">View my Github</div>
-                <div class="top">Back to the top</div>
-          </div>
+              <div class="person-intro">  
+                    <h4 id="Joshua Humphrey" style="background-color: #ffff00">Joshua Humphrey</h4>
+                    <p>My Favorite Things:</p>
+                    <ul>
+                        <li>Archery</li>
+                        <li>Martial Arts</li>
+                        <li>Cartoons</li>
+                      </ul>
 
-            <div class="person img">
-                <img src="" alt=""/>
-            </div> 
+                      <div class="about-buttons">
+                          <div class="btn">
+                              <a href="https://github.com/Humphreyj ">View my Github</a>
+                            </div>
+                            <div class="top">
+                              <a href="#top">Back to the top</a>
+                            </div>
+                      </div>
+              </div>
+
+                <div class="person-img">
+                    <img src="img/joshua.jpg" alt="Joshua photo"/>
+                </div> 
 
         </div> 
+
+        <div class="person">
+
+            <div class="person-intro">  
+                  <h4 id="Lesley Banadzem" style="background-color: rgb(212, 60, 212)">Lesley Banadzem</h4>
+                  <p>My Favorite Things:</p>
+                  <ul>
+                      <li>Sports</li>
+                      <li>Movies</li>
+                      <li>Dining Out</li>
+                    </ul>
+
+                <div class="about-buttons">
+                      <div class="btn">
+                        <a href="https://github.com/lesleyfon">View my Github</a>
+                      </div>
+                      <div class="top">
+                        <a href="#top">Back to the top</a>
+                      </div>
+                </div>
+            </div>
+  
+              <div class="person-img">
+                  <img src="img/lesley.jpg" alt="Lesley photo"/>
+              </div> 
+  
+          </div> 
+
 
 </section>
 <!-- content ends here -->

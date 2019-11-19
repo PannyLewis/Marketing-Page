@@ -5,11 +5,8 @@
   color: black;
 }
 body {
-  background-color: rgba(192, 189, 189, 0.945);
+  background-color: #EFEFEF;
   margin: 0 10% 0 10% ;
-}
-body div {
-  border: 1px solid;
 }
 .logo-title {
   display: flex;
@@ -41,7 +38,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(192, 189, 189, 0.945);
+  background-color: #EFEFEF;
 }
 @media (max-width: 500px) {
   nav {
@@ -85,10 +82,11 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   background-color: #D7D7D7;
+  margin: 0;
 }
 .home-content .home-article h4 {
-  font-size: 2em;
-  padding: 0;
+  font-size: 1.5em;
+  padding: 0.5em 0em 0.5em 0;
   margin: 0;
   text-align: center;
   font-style: 'Lato' sans-serif;
@@ -100,7 +98,7 @@ nav a:hover {
   font-style: 'Montserrat' sans-serif;
   font-size: large;
   height: 50%;
-  padding: 0 5% 0 5%;
+  margin: 0.5em 1em 3em 1em;
 }
 .home-content .home-article .btn {
   margin: 2%;
@@ -109,7 +107,8 @@ nav a:hover {
   cursor: pointer;
   width: 40%;
   height: 10%;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
   border-radius: 10px;
   background-color: #289628;
   color: black;
@@ -161,32 +160,30 @@ nav a:hover {
   padding: 2%;
   background-color: #D8D1AC;
 }
-.meet-team {
+.about-team {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   height: 200px;
+  background-color: #D8D1AC;
 }
-.meet-team .about-art {
-  padding: 2em;
+.about-team .meet-team {
+  padding: 3em;
   margin: 0;
-  width: 100;
-  height: 100%;
+  width: 25%;
 }
-.meet-team .about-art h2 {
+.about-team .meet-team h2 {
   font-size: 2em;
   margin: 0;
+  padding: 0.5em;
+  text-align: center;
 }
-.meet-team .about-art p {
+.about-team .meet-team p {
   font-size: large;
   margin: 1em;
 }
-.meet-team .about-art .team .lead .UI {
-  display: flex;
-  flex-direction: row;
-}
-.meet-team img {
+.about-team img {
   width: 100%;
   height: 100%;
 }
@@ -197,11 +194,98 @@ nav a:hover {
 .content-person .person {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #D8D1AC;
 }
-.content-person .person img {
+.content-person .person .person-intro {
+  background-color: #D7D7D7;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 50%;
 }
-.content-person .person li {
+.content-person .person .person-intro h4 {
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.5em;
+  border-radius: 0.1em;
+  text-align: center;
+}
+.content-person .person .person-intro p {
+  text-align: center;
+  font-size: large;
+  margin: 0;
+}
+.content-person .person .person-intro ul {
+  margin: 0em 2em 1em 6em;
+  padding: 1em 2em 1em 6em;
+}
+.content-person .person .about-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.2em 0em;
+}
+.content-person .person .about-buttons .btn {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  height: 10%;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #D8D1AC;
+  color: black;
+}
+@media (max-width: 500px) {
+  .content-person .person .about-buttons .btn {
+    margin: 0px 0px;
+    width: 100%;
+  }
+}
+.content-person .person .about-buttons .btn:hover {
+  opacity: 0.5;
+}
+.content-person .person .about-buttons .top {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  height: 10%;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #D8D1AC;
+  color: black;
+}
+@media (max-width: 500px) {
+  .content-person .person .about-buttons .top {
+    margin: 0px 0px;
+    width: 100%;
+  }
+}
+.content-person .person .about-buttons .top:hover {
+  opacity: 0.5;
+}
+.content-person .person .about-buttons a {
+  text-decoration: none;
+}
+.content-person .person-img {
+  width: 50%;
+  height: 50%;
+  margin: 5em;
+}
+.content-person .person-img img {
+  border: 5px solid;
+  width: 400px;
+  border-radius: 360px;
+  width: 100%;
+  height: 100%;
+}
+.person li {
   list-style: square;
 }
