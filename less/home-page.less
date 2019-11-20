@@ -4,6 +4,13 @@
         padding: 5% 10%;
         background-color: @section-bg;
         
+        @media @mobile {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                   
+        }
         
 
 
@@ -13,12 +20,24 @@
                 justify-content: space-between;
                 background-color: @section-bg;
                 
+                @media @mobile {
+                        flex-direction: column;                                                   
+                        display: flex;
+                }
                 
                 img {
                         width: 30%;
                         height: 300px;
                         border: .5em solid rgb(34, 163, 214);
                         border-radius: 1em;
+
+                        @media @mobile {
+                                width: 5em;
+                                height: 5em;
+                                border: .5em solid rgb(34, 163, 214);
+                                border-radius: .5em;
+
+                        }
                 }
         }
 
@@ -27,7 +46,14 @@
                 flex-direction: row;
                 justify-content: space-between;
                 background-color: @section-bg;
-                
+
+                @media @mobile {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        
+    
+                }
                 
 
                 .art {
@@ -38,6 +64,12 @@
                         background-color: @content-bg;
                         margin: 0;
                         
+                        @media @mobile {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                padding: 0 0 2em 0;    
+                        }
                 }
 
                 h4 {
@@ -55,12 +87,18 @@
                         font-style: @font-main;
                         font-size: large;
                         height: 50%;
-                        margin: .5em 1em 3em 1em; 
-                                        }
+                        margin: .5em 1em 3em 1em;
+
+                        @media @mobile {
+                                height: 30%;
+                                margin: .5em 1em 2em 1em;
+                        }
+                }
                 
                 .btn {                        
                         .custom-btn (black, rgb(40, 150, 40))
-                                               
+
+                 
                     }
         }
 

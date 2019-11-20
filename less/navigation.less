@@ -4,6 +4,12 @@
     display: flex;
     border-bottom: 1em solid cadetblue;
 
+    @media @mobile {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: center;
+    }
+
         img {
             width: 100%;
             height: 100%;
@@ -20,12 +26,23 @@
             font-style: @font-title;
             width: 80%;
             background-color: #7EAFBA;
+
+            @media @mobile {
+                width: 100%;
+            }
+
                         
             h1 {
                 font-size: 5em;
                 margin: 5%;
-                text-align: center;                
+                text-align: center;
+
+                @media @mobile {
+                    font-size: 1em;
+                }
+
             }
+
         }
 }
   
@@ -38,16 +55,16 @@
         justify-content: space-around;
         align-items: center;
         // background-image: url(https://i.ytimg.com/vi/2XX5zDThC3U/maxresdefault.jpg);
-        background-color: @main-bg;
-        
+        background-color: @content-bg;
         
         @media @mobile {
-            background: @head-color;            
+            flex-direction: column;
+            height: auto;            
         }
 
         a {
             font-size: 2em;            
-            text-decoration: none;
+            text-decoration: none;            
         }
 
         a:hover {     
