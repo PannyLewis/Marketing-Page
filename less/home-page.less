@@ -8,12 +8,17 @@
                 display: flex;
                 flex-direction: row;
                 margin: 0;
-                padding: 0;
-                   
+                padding: 0;                   
         }
-        
 
-
+                
+        @media @tablet {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;                   
+        }
+     
         .home-img {
                 display: flex;
                 flex-direction: row;
@@ -21,23 +26,43 @@
                 background-color: @section-bg;
                 
                 @media @mobile {
-                        flex-direction: column;                                                   
+                        flex-direction: column;                    
                         display: flex;
                 }
+
+                @media @tablet {
+                        flex-direction: column;                    
+                        display: flex;
+                        justify-content: space-around;
+                
+                }
+
                 
                 img {
                         width: 30%;
                         height: 300px;
                         border: .5em solid rgb(34, 163, 214);
                         border-radius: 1em;
+                        
+
 
                         @media @mobile {
                                 width: 5em;
                                 height: 5em;
                                 border: .5em solid rgb(34, 163, 214);
                                 border-radius: .5em;
+                                                               
 
                         }
+
+                        @media @tablet {
+                                width: 5em;
+                                height: 5em;
+                                border: .5em solid rgb(34, 163, 214);
+                                border-radius: .5em;           
+
+                        }
+
                 }
         }
 
@@ -50,8 +75,15 @@
                 @media @mobile {
                         display: flex;
                         flex-direction: column;
-                        width: 100%;
-                        
+                        width: 100%;                        
+    
+                }
+
+                @media @tablet {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%; 
+                        padding: 2em;                       
     
                 }
                 
@@ -62,7 +94,7 @@
                         flex-direction: column;
                         align-items: center;
                         background-color: @content-bg;
-                        margin: 0;
+                        margin: 1em;
                         
                         @media @mobile {
                                 display: flex;
@@ -70,6 +102,16 @@
                                 width: 100%;
                                 padding: 0 0 2em 0;    
                         }
+
+                        @media @tablet {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                padding: 0 0 0em 0;
+                                    
+                        }
+
+
                 }
 
                 h4 {
@@ -92,6 +134,11 @@
                         @media @mobile {
                                 height: 30%;
                                 margin: .5em 1em 2em 1em;
+                                font-size: medium;
+                        }
+
+                        @media @tablet {
+                                font-size: medium;
                         }
                 }
                 

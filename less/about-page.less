@@ -19,6 +19,7 @@
             width: 25%;
         }
 
+
         h2 {
             font-size: 2em;
             margin: 0;
@@ -64,6 +65,12 @@
             flex-direction: column-reverse;
 
         }
+
+        @media @tablet {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
         
         .person-intro {
             background-color: #D7D7D7;
@@ -88,7 +95,14 @@
                 @media @mobile {
                     margin: 0em 0 1em 0;
                     padding: 1.5em;
-                    font-size: 1.5em;
+                    font-size: 1em;
+
+                }
+
+                @media @tablet {
+                    margin: 0em 0 1em 0;
+                    padding: 1.5em;
+                    font-size: 1em;
 
                 }
 
@@ -157,10 +171,19 @@
             @media @mobile {
                 margin: 3em 0em 0em 0em;
                 padding: 0;
-                width: 75%;
-                height: 75%;
+                width: 50%;
+                height: 50%;
                                 
             }
+
+            @media @tablet {
+                margin: 3em 0em 0em 0em;
+                padding: 0;
+                width: 50%;
+                height: 50%;
+                                
+            }
+
 
             img {
                 border: 5px solid;                
