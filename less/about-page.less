@@ -1,0 +1,209 @@
+
+.about-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #D8D1AC;
+    
+    .meet-team {
+        padding: 3em;
+        margin: 0;
+        width: 25%;
+        // height: 100%;
+
+        @media @mobile {
+            padding: 1em;
+            margin: 1em;
+            width: 25%;
+        }
+
+
+        h2 {
+            font-size: 2em;
+            margin: 0;
+            padding: .5em;
+            text-align: center;
+
+            @media @mobile {
+                font-size: 1.5em;
+                padding: 1em 0 1em 0;
+                font-size: 1.5em;
+
+            }
+        }
+
+    }
+
+ 
+    img {
+        width: 90%;
+        height: 90%;        
+        padding: 2em 0em;       
+    }
+
+}
+
+
+
+.content-person {
+
+    display: flex;
+    flex-direction: column;
+        
+
+    .person {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #D8D1AC;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        @media @tablet {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+        
+        .person-intro {
+            background-color: #D7D7D7;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 50%;
+            margin: 3em;
+            
+            @media @mobile {
+                width: 100%;
+
+            }
+
+            h4 {
+                margin: 0em 0 1em 0;
+                padding: 2em;
+                font-size: 1.5em;
+                border-radius: .1em;
+                text-align: center;
+
+                @media @mobile {
+                    margin: 0em 0 1em 0;
+                    padding: 1.5em;
+                    font-size: 1em;
+
+                }
+
+                @media @tablet {
+                    margin: 0em 0 1em 0;
+                    padding: 1.5em;
+                    font-size: 1em;
+
+                }
+
+
+            }
+
+            p {
+                text-align: center;
+                font-size: large;
+                margin: 0;
+            }
+
+            ul {
+                margin: 0em 2em 1em 4em;
+                padding: 1em 2em 1em 4em;
+
+                @media @mobile {
+                    margin: 0em 2em 1em 3em;
+                    padding: 1em 2em 1em 3em;
+                }
+            }
+
+            }
+
+
+            .about-buttons {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding: .2em 0em;
+                    margin: 0 0 2em 0;
+                    
+                    @media @mobile {
+
+                        width: 50%;
+                        padding: 2em;
+                        margin: 2em;
+                        
+                    }
+                    
+
+            
+            .btn {
+                .custom-btn (black, #D8D1AC)
+
+
+            }
+
+            .top {
+
+                .custom-btn (black, #D8D1AC)
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+        
+    }
+
+        .person-img {
+            width: 50%;
+            height: 50%;
+            margin: 10em;
+
+            @media @mobile {
+                margin: 3em 0em 0em 0em;
+                padding: 0;
+                width: 50%;
+                height: 50%;
+                                
+            }
+
+            @media @tablet {
+                margin: 3em 0em 0em 0em;
+                padding: 0;
+                width: 50%;
+                height: 50%;
+                                
+            }
+
+
+            img {
+                border: 5px solid;                
+                border-radius: 360px;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+               
+            }
+
+
+        }
+
+        
+
+    }
+    
+    
+    .person {
+        .list-style()        
+    }
+
+}

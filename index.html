@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Language set below -->
+  <meta charset="utf-8">
+  
+  <!-- responsive meta below -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS requirement below -->
+  <link rel="stylesheet" href="/css/index.css">
+
+  <title>OER Bookr</title>
+<!-- book icon <i class="fas fa-book-open"></i> 
+    sign in icon <i class="fas fa-sign-in-alt"></i>
+    home icon <i class="fas fa-sign-in-alt"></i>
+-->
+</head>
+
+<body>
+<div class="container">
+  
+  <!--title and logo start-->
+  <div class="logo-title"> <!--parent-->
+    <!--child 1-->
+      <div class="logo">
+        <img src="img/oerlogo.jpg" alt="OER logo"/>
+      </div>
+
+    <!--child 2-->
+      <div class="title">
+        <h1>OER Bookr</h1>
+      </div>
+  </div>
+  <!--title and logo end-->
+
+  <!-- navigation start -->
+  <nav>
+                
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#Contact">Contact</a>                
+                <a href="https://openbookr.netlify.com/">Sign Up</a>
+              
+  </nav>   
+  <!-- navigation end-->
+
+
+  <!-- header begins here -->
+    <!-- <header class="head-img">        
+        <img src="img/header.jpg" alt="header background"/>
+  </header> -->
+  <!-- header ends here -->
+
+
+
+  <!-- content begins here -->
+  <section class="home-content"> <!--parent to 3 images stacked on top of 3 articles-->
+
+    <div class="home-img">  <!--parent to 3 images aligned in a row-->
+        <img src="img/teaching.png" alt="teachers resources"/>
+        <img src="img/peerreview.jpg" alt="peer review"/>
+        <img src="img/textstack.jpg" alt="license seal"/>
+    </div>
+
+    <div class="home-article"> <!--parent to 3 articles-->
+
+        <div class="art"> 
+          <h4>Teacher's Resources</h4>
+          <p>We offer all kinds of resources for educators:  peer reviewed textbooks, licensed textbooks, lesson plans, classroom management, etc.  Register for your own account and you will receive newsletters, promotions, and access to webinars.</p>
+          <div class="btn">Learn More</div>
+        </div>
+
+        <div class="art">
+          
+          <h4>Peer Reviews</h4>
+          <p>We have product reviews from other educators, as well as authors, researchers, and students.  Register for your own account and you will be able to make reviews on books and post your comments to other reviews.</p>
+          <div class="btn">Learn More</div>
+        </div>
+ 
+        <div class="art">
+          
+          <h4>Licensed Textooks</h4>
+          <p>Search or browse our large catalog of licensed textbooks.  You can search by subject or discipline, author, and you can also filter by reviews.</p>
+          <div class="btn">Learn More</div>
+      </div>
+  </section>
+  <!-- content ends here -->
+  
+
+<!-- contact us start -->
+<section id="Contact">
+
+    <div class="home-contact">
+        <h3>Contact Us</h3>
+
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- contact us end -->
+
+
+
+  <!-- copyright footer begins here -->
+    <section>
+            <footer>
+              <div class="home-footer">
+                <p>OER Booker 2019</p>
+              </div>
+            </footer>
+        
+    </section>    
+  <!-- copyright footer ends here -->
+
+</div>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
